@@ -1,5 +1,11 @@
 # Hugo Picocss Theme
 
+Create a new project and go to the themes folder.
+
+```bash
+hugo new site quickstart && cd quickstart/themes
+```
+
 Dead-simple Hugo theme made using [picocss]([url](https://picocss.com/docs)) with everything you need to get started.
 ## Getting started
 
