@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
-
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
 	<title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
 
-	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/pico.min.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="../css/pico.min.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="../../css/pico.min.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="../../css/style.css" type="text/css" media="all" />
 
 	{{ with .OutputFormats.Get "rss" -}}
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
@@ -16,7 +19,21 @@
 </head>
 
 <body>
-
-{{ partial "nav.html" . }}
+	<nav>
+		<ul>
+		  <li>
+			<a href="{{ .Site.BaseURL }}">
+				<strong>
+					{{ .Site.Title }}
+				</strong>
+			</a>
+		</li>
+		</ul>
+		<ul>
+		  <a href="#"> 
+			{{ partial "nav.html" . }} 
+		  </a>
+		</ul>
+	  </nav>
 
 <main class="content">

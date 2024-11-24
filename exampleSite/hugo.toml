@@ -1,6 +1,6 @@
 baseURL = "https://mynewhugosite.com"
 title = "My New Hugo Site"
-theme = "hugo-starter"
+theme = "your-theme-name"
 
 [menu]
   [[menu.main]]
@@ -14,3 +14,5 @@ theme = "hugo-starter"
     name = "About"
     url = "/about"
     weight = 20
+
+## USE THE ONE IN THE OTHER DIRECTORY!

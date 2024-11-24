@@ -1,14 +1,19 @@
 <header class="site-header">
   <nav class="site-nav">
-    <a class="logo" href="{{ .Site.BaseURL }}">
-      {{ .Site.Title }}
-    </a>
     <ul class="main-menu">
-      {{ range.Site.Menus.main }}
+  <!--      
       <li>
-        <a href="{{ .URL }}">{{ .Name }}</a>
+        <a href="{{ .Site.BaseURL }}"> {{ .Site.Title }} </a>
+      </li>
+  -->
+        {{ range.Site.Menus.main }}
+      <li>
+        <a href="{{ .URL }}"> {{ .Name }} </a>
       </li>
       {{ end }}
+      <li>
+        <a href="mailto:caspar.zialor@sjtu.edu.cn">Email</a>
+      </li>
     </ul>
   </nav>
 </header>
