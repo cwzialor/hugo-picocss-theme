@@ -1,4 +1,4 @@
-# Hugo Starter Theme
+# Hugo Picocss Theme
 
 Dead-simple Hugo theme made using [picocss]([url](https://picocss.com/docs)) with everything you need to get started.
 ## Getting started
